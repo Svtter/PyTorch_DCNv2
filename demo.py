@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from DCN.dcnv2 import DeformableConv2d as DCN
+from pytorch_dcnv2.dcnv2 import DeformableConv2d as DCN
 
 model = nn.Sequential(
     DCN(3, 32, kernel_size=3, stride=1, padding=1),
@@ -17,7 +17,7 @@ model = nn.Sequential(
     DCN(128, 128, kernel_size=3, stride=1, padding=1),
     DCN(128, 256, kernel_size=3, stride=1, padding=1),
     nn.ReLU(inplace=True),
-    nn.MaxPool2d(2, 2)
+    nn.MaxPool2d(2, 2),
 )
 
 x = torch.randn(2, 3, 64, 64)

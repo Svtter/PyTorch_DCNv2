@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/PyTorch_DCNv2.egg-info/PKG-INFO
+src/PyTorch_DCNv2.egg-info/SOURCES.txt
+src/PyTorch_DCNv2.egg-info/dependency_links.txt
+src/PyTorch_DCNv2.egg-info/top_level.txt
+src/pytorch_dcnv2/__init__.py
+src/pytorch_dcnv2/dcnv2.py
